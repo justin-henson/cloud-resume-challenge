@@ -3,7 +3,7 @@ import re
 import json
 from unittest import mock
 
-from function import app
+from hello_world import app
 
 with open('serverless-architecture-with-SAM/template.yaml', 'r') as f:
     TABLENAME = re.search(r'TableName: (.*)?', f.read()).group(1)
