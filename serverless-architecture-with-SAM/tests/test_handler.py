@@ -5,6 +5,8 @@ from unittest import mock
 
 from hello_world import app
 
+os.environ['AWS_DEFAULT_REGION'] = 'us-east-1'
+
 with open('serverless-architecture-with-SAM/template.yaml', 'r') as f:
     TABLENAME = re.search(r'TableName: (.*)?', f.read()).group(1)
 
