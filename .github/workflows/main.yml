@@ -16,7 +16,7 @@ jobs:
           cd serverless-architecture-with-SAM/hello_world/tests
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          python -m pytest serverless-architecture-with-SAM/hello_world/tests/test_handler.py
+          python -m pytest
       - name: Run tests with pytest
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
