@@ -31,4 +31,5 @@ def lambda_handler(event, context):
         },
         'body': {
     'visit_count' : visit_count
+    }
 }
