@@ -1,5 +1,4 @@
 import os
-import os.environ['AWS_DEFAULT_REGION'] = 'us-east-1'
 import re
 import json
 from unittest import mock
@@ -12,8 +11,8 @@ with open('serverless-architecture-with-SAM/template.yaml', 'r') as f:
 @mock.patch.dict(os.environ, {"TABLENAME": TABLENAME})
 def test_lambda_handler():
     # Check AWS creds
-    assert "AWS_ACCESS_KEY_ID" in os.environ
-    assert "AWS_SECRET_ACCESS_KEY" in os.environ
+    assert "AWS_ACCESS_KEY_ID" in os.environ['AWS_DEFAULT_REGION'] = 'us-east-1'
+    assert "AWS_SECRET_ACCESS_KEY" in os.environ['AWS_DEFAULT_REGION'] = 'us-east-1'
 
     ret = app.lambda_handler("", "")
 
