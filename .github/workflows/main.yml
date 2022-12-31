@@ -13,7 +13,7 @@ jobs:
           python-version: 3.8
       - name: Install dependencies
         run: |
-          cd serverless-architecture-with-SAM/hello_world/testsf
+          cd serverless-architecture-with-SAM/hello_world/tests
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run tests with pytest
