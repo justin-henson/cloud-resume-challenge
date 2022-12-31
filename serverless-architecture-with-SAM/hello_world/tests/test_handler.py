@@ -1,4 +1,5 @@
 import os
+import os.environ['AWS_DEFAULT_REGION'] = 'us-east-1'
 import re
 import json
 from unittest import mock
