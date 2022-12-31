@@ -1,4 +1,3 @@
 pytest
 pytest-mock
 boto3
-export AWS_DEFAULT_REGION='us-east-1'
