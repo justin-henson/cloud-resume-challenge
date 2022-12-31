@@ -13,10 +13,9 @@ jobs:
           python-version: 3.8
       - name: Install dependencies
         run: |
-          cd serverless-architecture-with-SAM/hello_world/tests
+          cd serverless-architecture-with-SAM/tests
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          python -m pytest
       - name: Run tests with pytest
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
