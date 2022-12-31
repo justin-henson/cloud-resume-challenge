@@ -1,10 +1,7 @@
 import json
 import boto3
 
-dynamodb = boto3.resource('dynamodb', 
-aws_access_key_id=AWS_ACCESS_KEY_ID, 
-aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
-region_name=AWS_DEFAULT_REGION)
+dynamodb = boto3.resource('dynamodb', region_name="us-east-1")
 
 table = dynamodb.Table('resume-website-app-tbl')
 
