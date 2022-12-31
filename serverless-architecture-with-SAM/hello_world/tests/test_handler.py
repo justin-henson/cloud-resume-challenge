@@ -5,7 +5,7 @@ from unittest import mock
 
 from hello_world import app
 
-with open('cloud-resume-challenge/serverless-architecture-with-SAM/template.yaml', 'r') as f:
+with open('serverless-architecture-with-SAM/template.yaml', 'r') as f:
     TABLENAME = re.search(r'TableName: (.*)?', f.read()).group(1)
 
 @mock.patch.dict(os.environ, {"TABLENAME": TABLENAME})
