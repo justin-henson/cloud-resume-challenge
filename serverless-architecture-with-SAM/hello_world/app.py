@@ -3,7 +3,7 @@ import boto3
 
 dynamodb = boto3.resource('dynamodb', region_name="us-east-1")
 
-table = dynamodb.Table('resume-website-app-tbl', region_name="us-east-1")
+table = dynamodb.Table('resume-website-app-tbl')
 
 def lambda_handler(event, context):
     response = table.get_item(
