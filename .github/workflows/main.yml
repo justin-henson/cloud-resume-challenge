@@ -1,14 +1,13 @@
 name: main
 on: push
 
-
 jobs:
   test-infra:
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v3
+      - uses: actions/setup-python@v1
         with:
           python-version: 3.8
       - name: Install dependencies
