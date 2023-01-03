@@ -32,7 +32,6 @@ jobs:
           python-version: 3.8   
       - Install dependencies
         run: pip install pyopenssl --upgrade
-        working-directory: serverless-architecture-with-SAM
       - uses: aws-actions/setup-sam@v2
       - uses: aws-actions/configure-aws-credentials@v1
         with:
